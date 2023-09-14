@@ -1,0 +1,460 @@
+:root {
+  --black: #06080c;
+  --grey: #c8d1f7;
+  --border: 1px solid rgb(0, 0, 0);
+  --white: white;
+  --mainElementWidth: 80%;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: "Roboto";
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+body {
+  background-color: var(--grey);
+}
+
+header {
+  /* border: var(--border); */
+  height: 70vh;
+  background-color: var(--grey);
+}
+
+header .topHeader {
+  /* border: var(--border); */
+  height: 10%;
+  width: var(--mainElementWidth);
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--black);
+}
+
+header .topHeader .topHeaderLeft {
+  /* border: var(--border); */
+  height: 100%;
+  width: 2%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+header .topHeader .topHeaderLeft i {
+  font-size: 40px;
+  margin-left: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+header .topHeader .topHeaderMiddle {
+  /* border: var(--border); */
+  width: 20%;
+  height: 60%;
+  margin-left: 40%;
+}
+
+header .topHeader .topHeaderMiddle .search {
+  /* border: var(--border); */
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+header .topHeader .topHeaderMiddle .search input {
+  width: 90%;
+  height: 100%;
+  border: 1px solid black;
+  border-right: none;
+  padding-left: 20px;
+}
+
+header .topHeader .topHeaderMiddle .search button {
+  width: 10%;
+  border: 1px solid black;
+  border-left: none;
+  background-color: white;
+  cursor: pointer;
+}
+
+header .topHeader .topHeaderRight {
+  /* border: var(--border); */
+  height: 100%;
+  width: 25%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 17px;
+}
+
+header .topHeader .topHeaderRight .separator {
+  border: 1px solid var(--black);
+  height: 60%;
+}
+
+header .topHeader .topHeaderRight i {
+  margin-right: 10px;
+}
+
+header .middleHeader {
+  /* border: var(--border); */
+  height: 7%;
+
+  background-color: white;
+}
+
+header .middleHeader .middleHeaderElements {
+  width: var(--mainElementWidth);
+  height: 95px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+header .middleHeader .middleHeaderElements .middleHeaderLeft {
+  /* border: var(--border); */
+  width: 60%;
+  height: 50%;
+}
+
+header .middleHeader .middleHeaderElements .middleHeaderLeft ul {
+  /* border: var(--border); */
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .middleHeader .middleHeaderElements .middleHeaderLeft ul li select {
+  border: none;
+  background-color: var(--white);
+  color: var(--black);
+  font-weight: bold;
+  font-size: 16px;
+  height: 30px;
+}
+
+header
+  .middleHeader
+  .middleHeaderElements
+  .middleHeaderLeft
+  ul
+  li
+  select:hover {
+  color: white;
+  background-color: var(--black);
+}
+
+header .middleHeader .middleHeaderElements .middleHeaderLeft ul li a {
+  color: var(--black);
+  font-weight: bold;
+}
+
+header .middleHeader .middleHeaderElements .middleHeaderLeft ul li a:hover {
+  color: white;
+  background-color: var(--black);
+}
+
+header .middleHeader .middleHeaderElements .middleHeaderLeft ul li a.active {
+  color: white;
+  background-color: var(--black);
+}
+
+header .middleHeader .middleHeaderElements .middleHeaderRight {
+  /* border: var(--border); */
+  height: 47px;
+  width: 13%;
+}
+
+header .middleHeader .middleHeaderElements .middleHeaderRight a {
+  height: 100%;
+  background-color: var(--black);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+header .middleHeader .middleHeaderElements .middleHeaderRight a:hover {
+  background-color: var(--white);
+  color: var(--black);
+}
+
+header .bottomHeader {
+  border: var(--border);
+  height: 83%;
+}
+
+header .bottomHeader img {
+  width: 100%;
+  height: 100%;
+}
+
+main {
+  /* border: var(--border); */
+  width: var(--mainElementWidth);
+  height: 70vh;
+  margin: 0 auto;
+  display: flex;
+  background-color: var(--white);
+}
+
+main .card {
+  /* border: var(--border); */
+
+  width: 50%;
+  margin: 0 auto;
+  height: 90%;
+  /* border: 1px solid black; */
+  border-radius: 2%;
+  -webkit-box-shadow: 3px 0px 20px -7px rgba(0, 0, 0, 0.67);
+  -moz-box-shadow: 3px 0px 20px -7px rgba(0, 0, 0, 0.67);
+  box-shadow: 3px 0px 20px -7px rgba(0, 0, 0, 0.67);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main .card .container {
+  /* border: var(--border); */
+  width: 90%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+main .card .container form {
+  /* border: var(--border); */
+  width: 70%;
+  height: 50%;
+  background-color: var(--grey);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: var(--black);
+  border-radius: 2%;
+}
+
+main .card .container form .form-control {
+  /* border: var(--border); */
+  width: 97%;
+  height: 20%;
+  margin-bottom: 4%;
+  margin: 2% auto;
+}
+
+main .card .container form .form-control input {
+  width: 100%;
+  height: 100%;
+  border: none;
+  padding-left: 2%;
+}
+
+main .card .container form .form-control input[type="submit"] {
+  background-color: var(--white);
+  font-size: 18px;
+  font-weight: bold;
+}
+
+main .card .container form .form-control input[type="submit"]:hover {
+  background-color: var(--grey);
+  color: var(--white);
+}
+
+main .card .container form label {
+  margin-left: 2%;
+  margin-top: 2%;
+  font-weight: bold;
+}
+
+main .card .container span {
+  margin-top: 2%;
+}
+
+main .card .container span a {
+}
+
+footer {
+  /* border: var(--border); */
+  width: var(--mainElementWidth);
+  height: 40vh;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  padding: 2%;
+}
+
+footer .logo {
+  /* border: var(--border); */
+  width: 20%;
+}
+
+footer .logo .topLogo {
+  /* border: var(--border); */
+  height: 25%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+footer .logo .topLogo i {
+  font-size: 3em;
+  margin: 7%;
+}
+
+footer .logo .bottomLogo {
+  /* border: var(--border); */
+  display: flex;
+  justify-content: space-between;
+  width: 30%;
+  height: 75%;
+}
+
+footer .page {
+  width: 20%;
+}
+
+footer .page .topPage {
+  /* border: var(--border); */
+  height: 25%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+footer .page .topPage h1 {
+  font-weight: 400;
+}
+
+footer .page .bottomPage {
+  /* border: var(--border); */
+  display: flex;
+  justify-content: flex-start;
+  height: 45%;
+}
+
+footer .page .bottomPage ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+footer .page .bottomPage ul li a {
+  color: var(--black);
+}
+
+footer .policy {
+  width: 20%;
+}
+
+footer .policy .topPage {
+  /* border: var(--border); */
+  height: 25%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+footer .policy .topPage h1 {
+  font-weight: 400;
+}
+
+footer .policy .bottomPage {
+  /* border: var(--border); */
+  display: flex;
+  justify-content: flex-start;
+  height: 30%;
+}
+
+footer .policy .bottomPage ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+footer .policy .bottomPage ul li a {
+  color: var(--black);
+}
+
+footer .categories {
+  width: 20%;
+}
+
+footer .categories .topPage {
+  /* border: var(--border); */
+  height: 25%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+footer .categories .topPage h1 {
+  font-weight: 400;
+}
+
+footer .categories .bottomPage {
+  /* border: var(--border); */
+  display: flex;
+  justify-content: flex-start;
+  height: 55%;
+}
+
+footer .categories .bottomPage ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+footer .categories .bottomPage ul li a {
+  color: var(--black);
+}
+
+footer .newsletter {
+  width: 20%;
+}
+
+footer .newsletter .topPage {
+  /* border: var(--border); */
+  height: 25%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+footer .newsletter .topPage h1 {
+  font-weight: 400;
+}
+
+footer .newsletter .bottomPage {
+  width: 100%;
+  height: 55%;
+}
+
+footer .newsletter .bottomPage .form {
+  border: var(--border);
+  height: 30%;
+  margin-top: 20px;
+  display: flex;
+}
+
+footer .newsletter .bottomPage .form input {
+  height: 100%;
+  width: 70%;
+}
+
+footer .newsletter .bottomPage .form button {
+  height: 100%;
+  width: 30%;
+  color: var(--white);
+  background-color: var(--black);
+  border: none;
+}
